@@ -4,11 +4,15 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 120px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
   html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+    /* Отступ от верха, подстройте под высоту вашего хедера + доп. отступ */
+
   }
 }
 
@@ -46,6 +50,7 @@ html {
 
 * {
   font-family: var(--font-nunito), sans-serif;
+  scroll-margin-top: 120px;
 }
 
 .scrollbar::-webkit-scrollbar {
@@ -76,6 +81,7 @@ html {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
